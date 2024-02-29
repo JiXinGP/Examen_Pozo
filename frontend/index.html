@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>PanApp</title>
+  <link href="./style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <center>
+      <h1>Panaderia Miski Tadai</h1>
+    </center>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="factura.html" id="verPedidoLink">Ver Pedido</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 class="menu-dia">Catalogo de productos</h2>
+    <div class="agrupar">
+      <div class="productos"></div>
+      <div class="carrito-container" id="carrito-container"></div>
+      <p id="totalCompraContainer">Total de la compra: $0.00</p>
+      <label for="entrega">Tipo de entrega:</label>
+      <select id="entrega">
+        <option value="domicilio">Entrega a domicilio</option>
+        <option value="local">Recogida en el local</option>
+      </select>
+      <button id="confirmarPedido">Confirmar Pedido</button>
+    </div>
+  </main>
+
+  <footer>
+    <ul>
+        <li><i class="fab fa-facebook" onclick="redireccionarAdmin()"></i> Facebook</li>
+        <li><i class="fab fa-instagram"></i> Instagram</li>
+        <li><i class="fab fa-twitter"></i> Twitter</li>
+    </ul>
+</footer>
+<script>
+    function redireccionarAdmin() {
+        window.location.href = "index_admin.html";
+    }
+</script>
+
+</body>
+
+</html>

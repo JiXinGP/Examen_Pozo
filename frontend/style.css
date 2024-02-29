@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+
+nav {
+    background-color: #4CAF50; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white; 
+    font-size: 18px; 
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333; 
+    padding: 20px 10px;
+    text-align: center;
+    clear: both;
+    margin-top: 20px;
+    color: white;
+}
+
+footer li {
+    font-size: 16px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.agrupar {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.imagen-producto {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.imagen-producto:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    border: 2px solid #4CAF50;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.descripcion {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.precio {
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+}
+
+.carrito-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+#totalCompraContainer {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 20px 0;
+}
+
+.menu-dia {
+    text-align: center;
+    font-size: 64px;
+    color: #000000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+th {
+    text-align: center;
+}
+
+.fab {
+    margin-right: 5px;
+}
+
+h1 {
+    color: white;
+}
